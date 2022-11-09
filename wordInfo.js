@@ -48,7 +48,7 @@ function displayRhymes(rhymeResults) {
   for (let i = 0; i < 10; i++) {
     const wordInfoPromise = createWordInfo(rhymeResultsTerms[i].innerText);
     wordInfoPromise.then((wordInfo) => {
-      console.log("WordInfo", i, wordInfo);
+      // console.log("WordInfo", i, wordInfo);
       rhymeResultsTerms[i].append(...wordInfo);
     });
   }
